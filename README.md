@@ -157,7 +157,7 @@ The developed model demonstrates strong potential for:
 ├── README.md              # مستندات پروژه (همین فایل)
 └── requirements.txt       # وابستگی‌های پایتون
 ```
-## Model Architecture
+## معماری مدل
 ```python
 Model: "sequential"
 _________________________________________________________________
