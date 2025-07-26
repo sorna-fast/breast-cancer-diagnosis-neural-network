@@ -157,6 +157,27 @@ The developed model demonstrates strong potential for:
 ├── README.md              # مستندات پروژه (همین فایل)
 └── requirements.txt       # وابستگی‌های پایتون
 ```
+## Model Architecture
+```python
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 32)                1344      
+                                                                 
+ dropout (Dropout)           (None, 32)                0         
+                                                                 
+ dense_1 (Dense)             (None, 16)                528       
+                                                                 
+ dropout_1 (Dropout)         (None, 16)                0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 17        
+                                                                 
+=================================================================
+Total params: 1,889
+Trainable params: 1,889
+Non-trainable params: 0
+```
 ## عملکرد آموزش
 ![تاریخچه آموزش](plots/training_curves.png)
 - توقف زودهنگام در دوره 47
