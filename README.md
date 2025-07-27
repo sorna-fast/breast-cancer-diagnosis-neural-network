@@ -69,7 +69,6 @@ Non-trainable params: 0
 
 ## Training Performance
 ![Training History](plots/training_curves.png)
-- Early stopping at epoch 47
 - Validation accuracy: 97.4%
 - No overfitting observed
 
@@ -180,7 +179,6 @@ Non-trainable params: 0
 ```
 ## عملکرد آموزش
 ![تاریخچه آموزش](plots/training_curves.png)
-- توقف زودهنگام در دوره 47
 - دقت اعتبارسنجی: 97.4%
 - عدم مشاهده بیش‌برازش
 
