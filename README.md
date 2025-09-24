@@ -69,7 +69,6 @@ Non-trainable params: 0
 
 ## Training Performance
 ![Training History](plots/training_curves.png)
-- Early stopping at epoch 47
 - Validation accuracy: 97.4%
 - No overfitting observed
 
@@ -134,7 +133,17 @@ The developed model demonstrates strong potential for:
 - Providing second-opinion validation
 
 ---
+## License
+This project is licensed under the [MIT](LICENSE) License.
 
+---
+
+👋 We hope you find this project useful! 🚀
+
+## Contact Developer  
+    Email: masudpythongit@gmail.com 
+    Telegram: https://t.me/Masoud_Ghasemi_sorna_fast
+🔗 GitHub Profile: [sorna-fast](https://github.com/sorna-fast)
 # تشخیص سرطان پستان با شبکه‌های عصبی مصنوعی (ANN)
 
 ## مرور کلی
@@ -142,25 +151,44 @@ The developed model demonstrates strong potential for:
 
 ## ساختار پروژه
 ```
-تشخیص-سرطان-پستان-با-شبکه-عصبی/
-├── داده‌ها/                   # ذخیره‌سازی مجموعه داده
-│   └── داده_سرطان_پستان.csv  # دیتاست اصلی (569 نمونه، 32 ویژگی)
-├── نوت‌بوک‌ها/              # فایل‌های Jupyter
-│   ├── تشخیص_سرطان_پستان_EN.ipynb  # نسخه انگلیسی (کامنت انگلیسی)
-│   └── تشخیص_سرطان_پستان_FA.ipynb  # نسخه فارسی (کامنت فارسی)
-├── نمودارها/                  # خروجی‌های مصورسازی
-│   ├── ماتریس_همبستگی.png       # نمودار حرارتی همبستگی ویژگی‌ها
-│   ├── هیستوگرام_ویژگی‌ها.png       # توزیع ویژگی‌های عددی
-│   ├── معماری_مدل.png       # دیاگرام شبکه عصبی
-│   ├── توزیع_هدف.png      # مصورسازی توازن کلاس‌ها
-│   └── منحنی‌های_آموزش.png          # دقت/زیان در طول آموزش
+├── data/                   # ذخیره‌سازی مجموعه داده
+│   └── breast_cancer_data.csv  # دیتاست اصلی (569 نمونه، 32 ویژگی)
+├── notebooks/              # فایل‌های Jupyter
+│   ├── breast_cancer_detection_EN.ipynb  # نسخه انگلیسی (کامنت انگلیسی)
+│   └── breast_cancer_detection_FA.ipynb  #  نسخه فارسی (کامنت فارسی)
+├── plots/                  # خروجی‌های مصورسازی
+│   ├── correlation_matrix.png       # نمودار حرارتی همبستگی ویژگی‌ها
+│   ├── feature_histograms.png       #  توزیع ویژگی‌های عددی
+│   ├── model_architecture.png       #  دیاگرام شبکه عصبی
+│   ├── target_distribution.png      # مصورسازی توازن کلاس‌ها
+│   └── training_curves.png          # دقت/زیان در طول آموزش
 ├── .gitignore             # فایل‌های حذف شده از کنترل نسخه
 ├── README.md              # مستندات پروژه (همین فایل)
-└── نیازمندی‌ها.txt       # وابستگی‌های پایتون
+└── requirements.txt       # وابستگی‌های پایتون
+```
+## معماری مدل
+```python
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 32)                1344      
+                                                                 
+ dropout (Dropout)           (None, 32)                0         
+                                                                 
+ dense_1 (Dense)             (None, 16)                528       
+                                                                 
+ dropout_1 (Dropout)         (None, 16)                0         
+                                                                 
+ dense_2 (Dense)             (None, 1)                 17        
+                                                                 
+=================================================================
+Total params: 1,889
+Trainable params: 1,889
+Non-trainable params: 0
 ```
 ## عملکرد آموزش
 ![تاریخچه آموزش](plots/training_curves.png)
-- توقف زودهنگام در دوره 47
 - دقت اعتبارسنجی: 97.4%
 - عدم مشاهده بیش‌برازش
 
@@ -223,6 +251,20 @@ jupyter notebook notebooks/breast_cancer_detection_FA.ipynb
 - کاهش منفی‌های کاذب در غربالگری
 - پشتیبانی از رادیولوژیست‌ها در گردش‌کار تشخیصی
 - ارائه اعتبارسنجی به عنوان نظر دوم
+## مجوز
+این پروژه تحت مجوز [MIT](LICENSE) منتشر شده است.
+
+
+---
+👋 امیدواریم این پروژه برای شما مفید باشد! 🚀
+
+## ارتباط با توسعه‌دهنده  
+    ایمیل: masudpythongit@gmail.com 
+    تلگرام: https://t.me/Masoud_Ghasemi_sorna_fast
+🔗 حساب گیتهاب: [sorna-fast](https://github.com/sorna-fast)
+
+---
+
 
 ---
 
